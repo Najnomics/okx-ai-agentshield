@@ -17,6 +17,13 @@ AgentShield is built for the OKX.AI Genesis ASP hackathon and the X Layer agent-
 - Core value: safer agent-to-agent commerce before funds, permissions, or private data move
 - Demo target: a buyer agent checks risky and safe ASP interactions before payment
 
+Hackathon notes:
+
+- Campaign: OKX.AI Genesis, part of the X Layer Build X series.
+- Build goal: create an Agent Service Provider that solves a clear real-world use case.
+- Submission flow: list the ASP on OKX.AI, post a short X walkthrough with `#OKXAI`, then submit the project form before the deadline.
+- Official context: https://www.okx.com/xlayer/build-x-hackathon
+
 ## Problem
 
 Agentic commerce creates a new failure mode: autonomous agents may pay unknown services, accept inflated quotes, approve dangerous transactions, or leak sensitive metadata without human review.
@@ -125,4 +132,3 @@ Thresholds:
 ## Status
 
 Hackathon planning repository. Implementation scaffold will add the MCP server, API service, tests, and dashboard.
-
