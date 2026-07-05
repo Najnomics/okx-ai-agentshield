@@ -124,6 +124,36 @@ Thresholds:
 
 - `spec.md` - full product and technical specification
 - `README.md` - project overview and hackathon framing
+- `app/` - FastAPI service implementation
+- `tests/` - API tests
+- `Dockerfile` - production container
+- `okx-ai-listing.md` - marketplace listing draft
+- `DEMO_SCRIPT.md` - 90-second walkthrough script
+
+## Run Locally
+
+```bash
+uv run uvicorn app.main:app --reload
+```
+
+Then open:
+
+- API docs: `http://127.0.0.1:8000/docs`
+- MCP-style manifest: `http://127.0.0.1:8000/mcp`
+- Demo payloads: `http://127.0.0.1:8000/demo`
+
+## Test
+
+```bash
+uv run --extra dev pytest
+```
+
+## Production Notes
+
+- Set `AGENTSHIELD_API_KEY` before exposing paid endpoints.
+- Deploy behind HTTPS before OKX.AI registration.
+- Use `AGENTSHIELD_DATA_DIR` for persistent SQLite audit storage.
+- Replace stubbed marketplace/reputation inputs with OKX.AI/X Layer adapters as those APIs become available.
 
 ## Contributor
 
@@ -131,4 +161,4 @@ Thresholds:
 
 ## Status
 
-Hackathon planning repository. Implementation scaffold will add the MCP server, API service, tests, and dashboard.
+Production-shaped MVP: API, tool endpoints, persistence, tests, Dockerfile, listing copy, and demo script are implemented.
