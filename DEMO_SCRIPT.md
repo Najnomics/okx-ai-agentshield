@@ -2,7 +2,7 @@
 
 ## 90-Second Walkthrough
 
-1. Open the deployed AgentShield API dashboard or `/docs`.
+1. Open the deployed AgentShield API docs at `/docs`.
 2. Call `/tools/check_agent_action` with the `unknown_expensive_asp` demo payload.
 3. Show the `CAUTION` result, price anomaly reason, and escrow recommendation.
 4. Call `/tools/check_contract_permission` with an unlimited approval payload.

@@ -96,7 +96,7 @@ The product returns a decision of `GO`, `CAUTION`, or `NO-GO`, with a numerical 
 ### 7.1 API Gateway
 
 - Validate tool inputs.
-- Authenticate dashboard users.
+- Authenticate protected endpoints.
 - Rate-limit public endpoints.
 - Attach session and payment metadata.
 - Route checks to engines.
@@ -206,13 +206,13 @@ CREATE TABLE asp_risk_profiles (
 
 ## 9. MVP Scope
 
-- A2MCP server with three working tools.
+- A2MCP server with four working tools.
 - Basic policy engine.
 - Mock marketplace/reputation data.
 - Endpoint probe.
 - Payment amount sanity check.
 - Decision report.
-- Minimal dashboard.
+- Audit history endpoint.
 - Demo scenarios for GO, CAUTION, and NO-GO.
 
 ## 10. V1 Scope
@@ -239,7 +239,7 @@ CREATE TABLE asp_risk_profiles (
 | 1 | MCP schemas and sample policies. |
 | 2 | Risk engine and mock reputation data. |
 | 3 | Endpoint probe and price sanity logic. |
-| 4 | Dashboard history view. |
+| 4 | Audit history endpoint. |
 | 5 | Demo fixtures and seeded scenarios. |
 | 6 | OKX.AI listing copy and X walkthrough. |
 | 7 | Polish, deploy, submit. |

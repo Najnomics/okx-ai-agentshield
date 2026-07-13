@@ -118,13 +118,14 @@ Thresholds:
 4. AgentShield returns `NO-GO`.
 5. Buyer selects a safer ASP.
 6. AgentShield returns `GO`.
-7. Payment proceeds and the check appears in the dashboard.
+7. Payment proceeds and the check appears in audit history.
 
 ## Repository Contents
 
 - `spec.md` - full product and technical specification
 - `README.md` - project overview and hackathon framing
 - `app/` - FastAPI service implementation
+- `proxy/` - optional Node/TypeScript x402 payment proxy sidecar
 - `tests/` - API tests
 - `Dockerfile` - production container
 - `okx-ai-listing.md` - marketplace listing draft
@@ -162,4 +163,4 @@ uv run --extra dev pytest
 
 ## Status
 
-Production-shaped MVP: API, tool endpoints, persistence, tests, Dockerfile, listing copy, and demo script are implemented.
+Production-shaped MVP: API, tool endpoints, persistence, tests, Dockerfile, listing copy, demo script, and optional payment proxy are implemented.
