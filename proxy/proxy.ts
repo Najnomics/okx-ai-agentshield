@@ -60,7 +60,7 @@ const OKX_SECRET_KEY = requireEnv("OKX_SECRET_KEY");
 const OKX_PASSPHRASE = requireEnv("OKX_PASSPHRASE");
 const OKX_BASE_URL = process.env.OKX_BASE_URL ?? "https://web3.okx.com";
 const UPSTREAM_BASE_URL = process.env.UPSTREAM_BASE_URL ?? "http://localhost:8000";
-const PROXY_PORT = Number(process.env.PROXY_PORT ?? "3000");
+const PROXY_PORT = Number(process.env.PROXY_PORT ?? process.env.PORT ?? "3000");
 
 // This is FastAPI's internal AGENTSHIELD_API_KEY (see config.py / require_api_key).
 // Buyer agents never see or need this -- the proxy holds it and attaches it to
