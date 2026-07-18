@@ -1,0 +1,14 @@
+{
+  "buyer_agent_id": "agent_demo",
+  "wallet_address": "0x1234567890abcdef1234567890abcdef12345678",
+  "action_type": "pay_and_call_asp",
+  "target_asp_id": "asp_new_expensive",
+  "amount": 25,
+  "currency": "USDT",
+  "chain_id": 196,
+  "endpoint_url": "https://new-asp.example/mcp",
+  "payload_summary": "Get token research report",
+  "category": "research",
+  "asp_completed_orders": 1,
+  "similar_service_median_usd": 2
+}
