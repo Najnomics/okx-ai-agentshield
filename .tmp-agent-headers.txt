@@ -1,0 +1,13 @@
+HTTP/1.1 402 Payment Required
+Content-Type: application/json; charset=utf-8
+Date: Mon, 20 Jul 2026 08:23:57 GMT
+etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+payment-required: eyJ4NDAyVmVyc2lvbiI6MiwiZXJyb3IiOiJQYXltZW50IHJlcXVpcmVkIiwicmVzb3VyY2UiOnsidXJsIjoiaHR0cDovL3Byb3h5LXByb2R1Y3Rpb24tMTgwYy51cC5yYWlsd2F5LmFwcC90b29scy9jaGVja19hZ2VudF9hY3Rpb24iLCJkZXNjcmlwdGlvbiI6IkFnZW50U2hpZWxkOiBnZW5lcmFsIHByZWZsaWdodCBhY3Rpb24gcmlzayBjaGVjayIsIm1pbWVUeXBlIjoiIn0sImFjY2VwdHMiOlt7InNjaGVtZSI6ImV4YWN0IiwibmV0d29yayI6ImVpcDE1NToxOTYiLCJhbW91bnQiOiI1MDAwMCIsImFzc2V0IjoiMHg3NzlkZWQwYzllMTAyMjIyNWY4ZTA2MzBiMzVhOWI1NGJlNzEzNzM2IiwicGF5VG8iOiIweDMyMjE3Mzc1MzdjNjBlMGY3MzA4ODVjYTBkNGNkYTZjMTFjN2MwM2UiLCJtYXhUaW1lb3V0U2Vjb25kcyI6MzAwLCJleHRyYSI6eyJuYW1lIjoiVVNE4oKuMCIsInZlcnNpb24iOiIxIn19XX0=
+Server: railway-hikari
+x-powered-by: Express
+x-railway-request-id: KJthDw-sS3yfjQCe2prcFg
+Content-Length: 2
+x-hikari-trace: cdg1.8vsn
+x-railway-edge: cdg1
+Connection: keep-alive
+

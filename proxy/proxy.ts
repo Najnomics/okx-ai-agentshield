@@ -103,6 +103,7 @@ const routes: RoutesConfig = {
       network: NETWORK,
     },
     description: "AgentShield: general preflight action risk check",
+    mimeType: "application/json",
   },
   "POST /tools/check_payment_request": {
     accepts: {
@@ -112,6 +113,7 @@ const routes: RoutesConfig = {
       network: NETWORK,
     },
     description: "AgentShield: payment request sanity check",
+    mimeType: "application/json",
   },
   "POST /tools/check_contract_permission": {
     accepts: {
@@ -121,6 +123,7 @@ const routes: RoutesConfig = {
       network: NETWORK,
     },
     description: "AgentShield: smart contract permission check",
+    mimeType: "application/json",
   },
   // check_asp_risk, /health, /mcp, /demo are intentionally NOT listed here,
   // so paymentMiddleware leaves them unprotected/free -- it only guards
@@ -128,6 +131,10 @@ const routes: RoutesConfig = {
 };
 
 const app = express();
+// Railway terminates TLS before forwarding to this Express process. Trusting
+// the proxy makes req.protocol honor X-Forwarded-Proto, so x402 challenges
+// advertise the public HTTPS resource URL instead of the internal HTTP URL.
+app.set("trust proxy", true);
 app.use(express.json());
 
 // 4. Attach the x402 paywall to the listed routes only.

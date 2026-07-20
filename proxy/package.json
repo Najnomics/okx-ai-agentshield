@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "build": "tsc -p tsconfig.json",
+    "check:x402": "node scripts/check-x402.mjs",
     "start": "node dist/proxy.js",
     "start:env-proxy": "node --use-env-proxy dist/proxy.js",
     "dev": "tsx proxy.ts",
